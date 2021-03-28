@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>CalculatorKU</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+</head>
+
+
+        <!-- bagian home -->
+        <div class="wrapper">
+                <div class= "container">
+                    <div class="row">
+                <div class="col-md-7  hidden-xs">
+                 </div>
+              </div>
+           <div class="col-md-5">
+          <div class="description text-center">
+             <h1><b><i>KalkulatorKU</b></i></h1>
+                <br>
+                <script>
+               var nama;
+               var selamat;
+              var sekarang = new Date();
+              var jam = sekarang.getHours();
+               nama = window.prompt("Masukan Nama:");
+             if(jam < 12)
+             selamat ="Pagi" ;
+             if(jam >= 12){
+            jam = jam - 12;
+             if(jam < 6)
+            selamat =" Siang ";
+                  if(jam >= 6)
+            selamat = "Malam ";
+                        }
+           document.writeln("<h3>selamat, "+ selamat+""+nama+"</h2>");
+             </script>
+                     <br>
+            <h5>Menghitung volume dan luas permukaan dari silinder, kerucut, dan bola.</h5>
+           </div>
+        </div>
+             </div>
+      </div>
+        </div>
+
+            <!-- silinder -->
+            <div class="section section-presentation">
+           <div class="container">
+            <section id="silinder">
+             <div class="row">
+             <div class="col-md-5 hidden-xs">
+           <div class="description">
+           <h4 class="header-text">Silinder</h4>
+         <label>Masukkan Jari-Jari Silinder</label>  
+           <input type="text" id="jariSilinder"><br><br>
+        <label>Masukkan Tinggi Silinder</label>
+       <input type="text" id="tinggiSilinder"><br><br>
+       <button class = "btn_hitung" onclick="permukaanS(), volumeS()">Hitung!</button>
+        <h4><b>Hasil Perhitungan</b></h4>
+       <p>Luas Permukaan: <span id="hasilPermukaan_Silinder"></span> m<sup>2</sup></p>
+       <p>Volume: <span id="hasilVolume_Silinder"></span> m<sup>3</sup></p>
+           </div>
+          </div>
+          <div class="col-md-6 ">
+       </div>
+                   </div>
+         </section>
+        </div>
+        </div>
+
+            <!-- bagian kerucut -->
+            <div class="section section-demo">
+           <div class="container">
+           <section id="kerucut">
+         <div class="row">
+        <div class="col-md-6">
+         </div>
+             </div>
+     <div class="col-md-5 col-md-offset-1">
+     <h4 class="header-text">Kerucut</h4>
+        <label>Masukkan Jari-Jari Kerucut</label>
+      <input type="text" id="jariKerucut"><br><br>
+         <label>Masukkan Garis Pelukis Kerucut</label>
+    <input type="text" id="pelukisKerucut"><br><br>
+    <label>Masukkan Tinggi Kerucut (dalam meter)</label>
+     <input type="text" id="tinggiKerucut"><br><br>
+      <button class = "btn_hitung" onclick="permukaanK(), volumeK()">Hitung!</button>
+          <h4><b>Hasil</b></h4>
+      <p>Luas Permukaan: <span id="hasilPermukaan_Kerucut"></span> m<sup>2</sup></p>
+           <p>Volume: <span id="hasilVolume_Kerucut"></span> m<sup>3</sup></p>
+              </div>
+              </div>
+           </section>
+         <br>
+
+                    <!-- bola -->
+              <section id="bola">
+                <div class="row">
+                 <div class="col-md-5">
+                 <h4 class="header-text">Bola</h4>
+                <label>Masukkan Jari-Jari Bola</label>
+               <input type="text" id="jariBola"><br><br>
+               <button class = "btn_hitung" onclick="permukaanB(), volumeB()">Hitung!</button>
+                <h4><b>Hasil perhitungan</b></h4>
+                <p>Luas permukaan: <span id="hasilPermukaan_Bola"></span> m<sup>2</sup></p>
+                 <p>Volume: <span id="hasilVolume_Bola"></span> m<sup>3</sup></p>
+                   </div>
+               <div class="col-md-6 col-md-offset-1">
+                </div>
+                </div>
+              </div>
+            </section>
+            </div>
+            </div>
+
+              <div class="copyright">
+            &copy; 2021 <a href="#">Surya dharma bakti rm</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="medsos">
+    <div class="container">
+      <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=100041533090043"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/_____surya12_/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="http://line.me/D"><i class="fab fa-line"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</html> 
